@@ -1,4 +1,4 @@
-import { Badge, CartButton } from "./HeaderCartButtonStyles";
+import { Badge, CartButton } from "./Styles/HeaderCartButtonStyles";
 import CartIcon from "../Cart/CartIcon";
 
 const HeaderCartButton = (props) => {

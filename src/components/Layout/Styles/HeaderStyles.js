@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
   left: 0;
   width: 100%;
   height: 5rem;
-  background-color: #58453f;
+  background-color: #0e804c;
   color: white;
   display: flex;
   justify-content: space-between;

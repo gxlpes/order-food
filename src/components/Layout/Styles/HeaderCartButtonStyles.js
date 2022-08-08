@@ -4,7 +4,7 @@ export const CartButton = styled.button`
   cursor: pointer;
   font: inherit;
   border: none;
-  background-color: #4d1601;
+  background-color: #084d2e;
   color: white;
   padding: 0.75rem 3rem;
   display: flex;
@@ -15,12 +15,12 @@ export const CartButton = styled.button`
 
   &:hover,
   &:active {
-    background-color: #7f5d04;
+    opacity: 0.5;
   }
 `;
 
 export const Badge = styled.span`
-  background-color: #b94517;
+  background-color: #b6ad02;
   padding: 0.25rem 1rem;
   border-radius: 25px;
   margin-left: 1rem;

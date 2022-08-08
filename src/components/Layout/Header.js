@@ -1,6 +1,6 @@
 import mealsImage from "../../assets/meals.jpeg";
 import HeaderCartButton from "./HeaderCartButton";
-import { ContainerIMG, BackgroundIMG, HeaderContainer } from "./HeaderStyles";
+import { ContainerIMG, BackgroundIMG, HeaderContainer } from "./Styles/HeaderStyles";
 
 const Header = (props) => {
   return (
