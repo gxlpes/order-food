@@ -19,7 +19,9 @@ export const MealItemLi = styled.li`
   }
 
   .description {
+    margin-right: 2rem;
     font-style: italic;
+    word-break: break-word;
   }
 
   .price {

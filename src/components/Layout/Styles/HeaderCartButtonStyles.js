@@ -6,7 +6,8 @@ export const CartButton = styled.button`
   border: none;
   background-color: #084d2e;
   color: white;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 1rem;
+  width: clamp(1rem + 1vw, 5rem + 5vw, 10vw +15rem);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,6 +36,10 @@ export const CartButton = styled.button`
     100% {
       transform: scale(1);
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem 1rem;
   }
 `;
 

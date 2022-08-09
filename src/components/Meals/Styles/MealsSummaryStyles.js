@@ -17,8 +17,8 @@ export const Summary = styled.div`
   gap: 2rem;
 
   h2 {
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: clamp(0.5vw + 0.5rem, 1vw + 2rem, 1vw + 3rem);
     margin-top: 0;
   }
 `;

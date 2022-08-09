@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  font-size: clamp(0.5vw + 0.5rem, 0.5vw + 0.5rem, 5vw + 5rem);
   height: 5rem;
   background-color: #0e804c;
   color: white;

@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const FormContainer = styled.form`
   text-align: right;
+  width: 8rem;
 
   button {
+    width: 100%;
+    text-align: center;
     font: inherit;
     cursor: pointer;
     background-color: #b6ad02;

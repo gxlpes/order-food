@@ -30,7 +30,7 @@ const HeaderCartButton = (props) => {
   return (
     <CartButton onClick={props.onClick} animate={btnIsClicked ? "bump" : " "}>
       <CartIcon />
-      <span>Your Cart</span>
+      <span>Cart</span>
       <Badge>{numberOfCartItems}</Badge>
     </CartButton>
   );
