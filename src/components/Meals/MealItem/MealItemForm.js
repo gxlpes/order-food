@@ -4,23 +4,24 @@ import { useRef, useState } from "react";
 
 const MealItemForm = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
-  const amountInputRef = useRef;
+  const amountInputRef = useRef();
 
   const submitHandler = (event) => {
     event.preventDefault();
 
     const enteredAmount = amountInputRef.current.value;
-    const enteredAmountConvertNumber = +enteredAmount; // convert string to a number
+    const enteredAmountNumber = +enteredAmount;
 
     if (
-      enteredAmountConvertNumber.trim().length === 0 ||
-      enteredAmountConvertNumber < 1 ||
-      enteredAmountConvertNumber > 5
+      enteredAmount.trim().length === 0 ||
+      enteredAmountNumber < 1 ||
+      enteredAmountNumber > 5
     ) {
       setAmountIsValid(false);
       return;
     }
-    props.onAddToCart(enteredAmountConvertNumber);
+
+    props.onAddToCart(enteredAmountNumber);
   };
 
   return (
