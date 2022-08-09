@@ -13,7 +13,7 @@ const Cart = (props) => {
   const hasItemCart = cartCTX.items.length > 0;
 
   const cartItemRemoveHandler = (id) => {
-    cartCTX.removeItem({ ...id, amount: 1 });
+    cartCTX.removeItem(id);
   };
 
   const cartItemAddHandler = (item) => {

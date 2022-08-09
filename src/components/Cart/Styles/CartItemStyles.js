@@ -13,11 +13,15 @@ export const CartItemLi = styled.li`
     color: #3f3f3f;
   }
 
-  .summary {
-    width: 10rem;
+  .left-side {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .name-price {
+    display: flex;
+    flex-direction: column;
   }
 
   .price {
@@ -48,6 +52,7 @@ export const CartItemLi = styled.li`
     text-align: center;
     border-radius: 1px;
     background-color: #b6ad02;
+    margin-left: 1rem;
   }
 
   @media (min-width: 768px) {

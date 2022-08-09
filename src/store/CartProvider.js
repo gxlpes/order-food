@@ -50,11 +50,11 @@ const cartReducer = (state, action) => {
 
     if (existingItem.amount === 1) {
       //check if is the last item
-      updatedItems = state.items.filter((item) => item.id !== action.idCart);
+      updatedItems = state.items.filter((item) => item.id !== action.idCart); // maintain other items that are not being removed
     } else {
-      const updatedItem = { ...existingItem, amount: existingItem.amount - 1 };
+      const updatedItem = { ...existingItem, amount: existingItem.amount - 1 }; // updated the amount of the item in the cart
       updatedItems = [...state.items];
-      updatedItems[existingCartItemIndex] = updatedItem;
+      updatedItems[existingCartItemIndex] = updatedItem; // overwritting the old item with a new item with a new amount
     }
     return {
       items: updatedItems,
