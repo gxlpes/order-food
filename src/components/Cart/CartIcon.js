@@ -1,4 +1,4 @@
-import { StyledSVGBtn } from "./CartIconStyles";
+import { StyledSVGBtn } from "./Styles/CartIconStyles";
 
 const CartIcon = () => {
   return (

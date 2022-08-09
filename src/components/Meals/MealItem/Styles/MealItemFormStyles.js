@@ -6,17 +6,16 @@ export const FormContainer = styled.form`
   button {
     font: inherit;
     cursor: pointer;
-    background-color: #8a2b06;
-    border: 1px solid #8a2b06;
+    background-color: #b6ad02;
+    border: none;
     color: white;
-    padding: 0.25rem 2rem;
+    padding: 0.4rem 2rem;
     border-radius: 20px;
     font-weight: bold;
   }
 
   button:hover,
   button:active {
-    background-color: #641e03;
-    border-color: #641e03;
+    opacity: 0.5;
   }
 `;
