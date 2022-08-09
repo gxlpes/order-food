@@ -1,14 +1,26 @@
 import Header from "./components/Layout/Header";
-import { GlobalStyles } from "./GlobalStyles";
 import Meals from "./components/Meals/Meals";
 import Cart from "../src/components/Cart/Cart";
 
+import { GlobalStyles } from "./GlobalStyles";
+import { useState } from "react";
+
 function App() {
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
     <>
       <GlobalStyles />
-      <Cart />
-      <Header />
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
       </main>

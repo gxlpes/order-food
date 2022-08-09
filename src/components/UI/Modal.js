@@ -2,7 +2,7 @@ import { BackdropWrapper, ModalStyled } from "./Styles/ModalStyles";
 import ReactDOM from "react-dom";
 
 const Backdrop = (props) => {
-  return <BackdropWrapper />;
+  return <BackdropWrapper onClick={props.onClose} />;
 };
 
 const ModalOverlay = (props) => {
@@ -13,12 +13,12 @@ const ModalOverlay = (props) => {
   );
 };
 
-const portalHTMLElement = document.getElementById("overlays");
-
 const Modal = (props) => {
+  const portalHTMLElement = document.getElementById("overlays");
+
   return (
     <>
-      {ReactDOM.createPortal(<Backdrop />, portalHTMLElement)}
+      {ReactDOM.createPortal(<Backdrop onClose={props.onClose} />, portalHTMLElement)}
       {ReactDOM.createPortal(
         <ModalOverlay>{props.children}</ModalOverlay>,
         portalHTMLElement

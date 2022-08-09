@@ -42,4 +42,14 @@ export const BackdropWrapper = styled.div`
   height: 100vh;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.75);
+  animation: fade-in 0.3s ease-in-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
