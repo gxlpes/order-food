@@ -14,7 +14,7 @@ const HeaderCartButton = (props) => {
     <CartButton onClick={props.onClick}>
       <CartIcon />
       <span>Your Cart</span>
-      <Badge>3</Badge>
+      <Badge>{numberOfCartItems}</Badge>
     </CartButton>
   );
 };

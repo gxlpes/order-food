@@ -31,7 +31,7 @@ const DUMMY_MEALS = [
 
 const DispMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) => (
-    <MealItem
+    <MealItem // forwading data via props
       id={meal.id}
       key={meal.id}
       name={meal.name}
