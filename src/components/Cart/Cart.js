@@ -1,5 +1,5 @@
 import Modal from "../UI/Modal";
-import { TotalAmountInfo, ButtonsActions } from "./Styles/CartStyles";
+import { TotalAmountInfo, ButtonsActions, CartItemContainer } from "./Styles/CartStyles";
 import CartItem from "./CartItem";
 
 import { useContext } from "react";
@@ -16,7 +16,7 @@ const Cart = (props) => {
   const cartItemAddHandler = (item) => {};
 
   const cartItems = (
-    <ul>
+    <CartItemContainer>
       {cartCTX.items.map((item) => (
         <CartItem
           key={item.id}
@@ -27,7 +27,7 @@ const Cart = (props) => {
           onAdd={cartItemAddHandler.bind(null, item)}
         />
       ))}
-    </ul>
+    </CartItemContainer>
   );
 
   return (
