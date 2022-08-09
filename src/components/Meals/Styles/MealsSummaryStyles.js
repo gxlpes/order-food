@@ -9,7 +9,7 @@ export const Summary = styled.div`
   position: relative;
   background-color: #58453f;
   color: white;
-  border-radius: 14px;
+  border-radius: 5px;
   padding: 3rem;
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
   display: flex;

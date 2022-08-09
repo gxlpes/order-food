@@ -4,15 +4,16 @@ import { useContext } from "react";
 import CartContext from "../../../store/cart-context";
 
 const MealItem = (props) => {
-  const cartCtx = useContext(CartContext);
+  const cartCtx = useContext(CartContext); // to add a meal item via addItem in cart-context.js
 
   const price = `$${props.price.toFixed(2)}`;
 
   const addToCartHandler = (amount) => {
     cartCtx.addItem({
+      // sending all data to CartProvider.js as "item"
       id: props.id,
       name: props.name,
-      amount: amount,
+      amount: amount, // received from MealItemForm.js via props
       price: props.price,
     });
   };

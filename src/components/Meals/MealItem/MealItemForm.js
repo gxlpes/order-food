@@ -35,7 +35,7 @@ const MealItemForm = (props) => {
           min: "1",
           max: "5",
           step: "1",
-          defaultValue: "1",
+          defaultValue: "0",
         }} // usage of min and max to make a validation of the input amount
       />
       <button>Add Meal</button>

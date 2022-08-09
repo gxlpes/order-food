@@ -16,5 +16,6 @@ export const InputWrapper = styled.div`
     border: 1px solid #ccc;
     font: inherit;
     padding-left: 0.5rem;
+    text-align: center;
   }
 `;

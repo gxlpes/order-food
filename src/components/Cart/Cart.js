@@ -8,16 +8,22 @@ import CartContext from "../../store/cart-context";
 const Cart = (props) => {
   const cartCTX = useContext(CartContext);
 
-  const totalAmount = `$${cartCTX.totalAmount.toFixed(2)}`;
+  const totalAmount = `$${cartCTX.totalAmount.toFixed(2)}`; // amount set in the context via amount in MealItemForm.js
+
   const hasItemCart = cartCTX.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {};
+  const cartItemRemoveHandler = (id) => {
+    cartCTX.removeItem({ ...id, amount: 1 });
+  };
 
-  const cartItemAddHandler = (item) => {};
+  const cartItemAddHandler = (item) => {
+    cartCTX.addItem({ ...item, amount: 1 });
+  };
 
   const cartItems = (
     <CartItemContainer>
       {cartCTX.items.map((item) => (
+        // send data to each item via props to CartItem.js
         <CartItem
           key={item.id}
           name={item.name}

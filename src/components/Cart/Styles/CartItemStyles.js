@@ -46,7 +46,7 @@ export const CartItemLi = styled.li`
     border: none;
     width: 3rem;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 1px;
     background-color: #b6ad02;
   }
 

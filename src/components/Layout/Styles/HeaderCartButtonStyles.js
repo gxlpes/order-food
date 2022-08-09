@@ -10,7 +10,7 @@ export const CartButton = styled.button`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 5px;
   font-weight: bold;
 
   &:hover,
@@ -22,7 +22,7 @@ export const CartButton = styled.button`
 export const Badge = styled.span`
   background-color: #b6ad02;
   padding: 0.25rem 1rem;
-  border-radius: 25px;
+  border-radius: 5px;
   margin-left: 1rem;
   font-weight: bold;
   display: flex;

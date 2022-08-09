@@ -5,7 +5,7 @@ export const CartItemContainer = styled.div`
   margin: 0;
   padding: 0;
   max-height: 20rem;
-  overflow: scroll;
+  overflow-x: hidden;
 `;
 
 export const TotalAmountInfo = styled.div`
@@ -26,7 +26,7 @@ export const ButtonsActions = styled.div`
     background-color: transparent;
     border: none;
     padding: 0.5rem 3rem;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-left: 1rem;
   }
 

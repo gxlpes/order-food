@@ -10,7 +10,7 @@ export const FormContainer = styled.form`
     border: none;
     color: white;
     padding: 0.4rem 2rem;
-    border-radius: 20px;
+    border-radius: 5px;
     font-weight: bold;
   }
 
