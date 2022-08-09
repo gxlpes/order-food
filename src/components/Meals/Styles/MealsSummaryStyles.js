@@ -5,7 +5,7 @@ export const Summary = styled.div`
   max-width: 45rem;
   width: 90%;
   margin: auto;
-  margin-top: -10rem;
+  margin-top: -40rem;
   position: relative;
   background-color: #58453f;
   color: white;

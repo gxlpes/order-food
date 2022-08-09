@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
 
 export const ContainerIMG = styled.div`
   width: 100%;
-  height: 25rem;
+  height: 50rem;
   z-index: 0;
   overflow: hidden;
 `;
@@ -28,5 +28,5 @@ export const BackgroundIMG = styled.img`
   width: 110%;
   height: 100%;
   object-fit: cover;
-  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  transform: rotateZ(-3deg) translateY(-4rem) translateX(-1rem);
 `;
