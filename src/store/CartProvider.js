@@ -11,7 +11,7 @@ const cartReducer = (state, action) => {
     const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
 
     const existingCartItemIndex = state.items.findIndex(
-      (item) => item.id === action.item.id // item.id is the item in the array and action.item.id is the item being sent
+      (item) => item.id === action.item.id // item.id is the item in the context array and action.item.id is the item being sent
     );
 
     const existingCartItem = state.items[existingCartItemIndex];
@@ -20,12 +20,12 @@ const cartReducer = (state, action) => {
     if (existingCartItem) {
       const updatedItem = {
         ...existingCartItem,
-        amount: existingCartItem.amount + action.item.amount,
+        amount: existingCartItem.amount + action.item.amount, // existingCartItem is the "old" item and action.item.amount is the new item being added to the array
       };
       updatedItems = [...state.items];
       updatedItems[existingCartItemIndex] = updatedItem;
     } else {
-      updatedItems = state.items.concat(action.item);
+      updatedItems = state.items.concat(action.item); // if the item is being added in a first time inside of the array
     }
 
     return {
